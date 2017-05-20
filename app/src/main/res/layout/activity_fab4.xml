@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="15dp"
+            app:useCompatPadding="true"
+            app:elevation="10dp"
+            app:rippleColor="@color/colorPrimary"
+            app:layout_behavior="com.minicup.materialdesign.FAB.ScrollBehaviorCustom"
+            android:src="@android:drawable/ic_input_delete"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
