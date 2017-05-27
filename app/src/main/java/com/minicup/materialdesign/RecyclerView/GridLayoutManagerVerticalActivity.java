@@ -28,7 +28,7 @@ public class GridLayoutManagerVerticalActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
-        mRecyclerView.addItemDecoration(new GridItemDecoration(this, GridLayoutManager.VERTICAL));
+        mRecyclerView.addItemDecoration(new GridCustomItemDecoration(this, GridLayoutManager.VERTICAL));
 
         mRecyclerView.setAdapter(new LocalAdapter());
     }

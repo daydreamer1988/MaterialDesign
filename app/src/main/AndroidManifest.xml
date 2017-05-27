@@ -62,8 +62,34 @@
         <activity android:name=".RecyclerView.StaggeredHorizontalActivity" />
         <activity android:name=".RecyclerView.MultiSizeStaggeredVerticalActivity" />
         <activity android:name=".RecyclerView.MultiSizeStaggeredHorizontalActivity" />
-        <activity android:name=".RecyclerView.ItemAnimationActivity"
-            ></activity>
+        <activity android:name=".RecyclerView.ItemAnimationActivity" />
+        <activity android:name=".RecyclerView.MeiziActivity" />
+        <activity android:name=".RecyclerView.MeiziStaggeredActivity" />
+        <activity android:name=".RecyclerView.MeiziBothRefreshActivity" />
+        <activity android:name=".BottomSheet.BottomSheetBehaviorActivity" />
+        <activity android:name=".Behavior.BottomSheetApplay1Activity" />
+        <activity android:name=".BottomSheet.BottomSheetListActivity" />
+        <activity android:name=".BottomSheet.BottomSheetDialogActivity" />
+        <activity
+            android:name=".Toolbar.CollapsingAppBarLayoutActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Toolbar.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Toolbar.ScrollingActivity2"
+            android:theme="@style/NoActionBar">
+
+        </activity>
+        <activity android:name=".TabLayout.TabLayoutListActivity" />
+        <activity android:name=".TabLayout.TabLayout1Activity"
+            android:theme="@style/NoActionBar"></activity>
+
+        <activity android:name=".TabLayout.TabLayout2Activity"
+            android:theme="@style/NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

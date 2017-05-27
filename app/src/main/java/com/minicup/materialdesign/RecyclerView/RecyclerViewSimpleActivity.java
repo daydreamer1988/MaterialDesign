@@ -37,7 +37,7 @@ public class RecyclerViewSimpleActivity extends AppCompatActivity {
     private void initRecyclerView() {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mRecyclerView.addItemDecoration(new LinearItemDecoration(this, LinearLayoutManager.VERTICAL));
+        mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.VERTICAL));
 
         mRecyclerView.setAdapter(new RecyclerView.Adapter() {
             @Override

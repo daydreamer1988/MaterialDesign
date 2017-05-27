@@ -13,7 +13,7 @@ import android.view.View;
  * Created by Austin on 2017-05-19.
  */
 
-public class LinearItemDecoration extends RecyclerView.ItemDecoration {
+public class LinearCustomItemDecoration extends RecyclerView.ItemDecoration {
 
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
 
@@ -21,7 +21,7 @@ public class LinearItemDecoration extends RecyclerView.ItemDecoration {
     private final int mOritation;
     private final Drawable mDivider;
 
-    public LinearItemDecoration(Context context, int oritation) {
+    public LinearCustomItemDecoration(Context context, int oritation) {
         this.mContext = context;
         this.mOritation = oritation;
         TypedArray typedArray = context.obtainStyledAttributes(ATTRS);

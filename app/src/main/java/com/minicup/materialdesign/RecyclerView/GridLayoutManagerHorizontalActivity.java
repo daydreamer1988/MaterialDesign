@@ -27,7 +27,7 @@ public class GridLayoutManagerHorizontalActivity extends AppCompatActivity {
         initData();
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 3, GridLayoutManager.HORIZONTAL, false));
         mRecyclerView.setAdapter(new LocalAdapter());
-        mRecyclerView.addItemDecoration(new GridItemDecoration(this, GridLayoutManager.HORIZONTAL));
+        mRecyclerView.addItemDecoration(new GridCustomItemDecoration(this, GridLayoutManager.HORIZONTAL));
 
     }
 

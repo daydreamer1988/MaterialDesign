@@ -29,7 +29,7 @@ public class MultiSizeStaggeredVerticalActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.setAdapter(new LocalAdapter());
-        mRecyclerView.addItemDecoration(new StaggeredItemDecoration(10));
+        mRecyclerView.addItemDecoration(new MarginItemDecoration(10));
 
     }
 

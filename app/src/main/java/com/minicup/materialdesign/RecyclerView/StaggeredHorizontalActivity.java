@@ -28,7 +28,7 @@ public class StaggeredHorizontalActivity extends AppCompatActivity {
 
         mRecyclerView.setAdapter(new LocalAdapter());
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.HORIZONTAL));
-        mRecyclerView.addItemDecoration(new GridItemDecoration(this, StaggeredGridLayoutManager.HORIZONTAL));
+        mRecyclerView.addItemDecoration(new GridCustomItemDecoration(this, StaggeredGridLayoutManager.HORIZONTAL));
 
     }
 

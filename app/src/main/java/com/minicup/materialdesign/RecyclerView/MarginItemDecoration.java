@@ -8,11 +8,11 @@ import android.view.View;
  * Created by Austin on 2017-05-20.
  */
 
-public class StaggeredItemDecoration extends RecyclerView.ItemDecoration {
+public class MarginItemDecoration extends RecyclerView.ItemDecoration {
 
     private int margin;
 
-    public StaggeredItemDecoration(int margin) {
+    public MarginItemDecoration(int margin) {
         this.margin = margin;
     }
 

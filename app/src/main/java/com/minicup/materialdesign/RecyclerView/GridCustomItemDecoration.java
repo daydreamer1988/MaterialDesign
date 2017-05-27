@@ -14,14 +14,14 @@ import android.view.View;
  * Created by Austin on 2017-05-19.
  */
 
-public class GridItemDecoration extends RecyclerView.ItemDecoration {
+public class GridCustomItemDecoration extends RecyclerView.ItemDecoration {
 
     private final Context mContext;
     private final int mOrientation;
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
     private final Drawable mDivider;
 
-    public GridItemDecoration(Context context, int orientation) {
+    public GridCustomItemDecoration(Context context, int orientation) {
         this.mContext = context;
         this.mOrientation = orientation;
         TypedArray typedArray = context.obtainStyledAttributes(ATTRS);

@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.minicup.materialdesign.ActivityInfo;
+import com.minicup.materialdesign.BottomSheet.BottomSheetBehaviorActivity;
 import com.minicup.materialdesign.R;
+import com.minicup.materialdesign.RecyclerView.MarginItemDecoration;
 import com.minicup.materialdesign.RecyclerviewAdapter;
 
 public class BehaviorListActivity extends AppCompatActivity {
@@ -32,12 +34,14 @@ public class BehaviorListActivity extends AppCompatActivity {
             }
         });
 
+        mRecyclerView.addItemDecoration(new MarginItemDecoration(1));
     }
 
     ActivityInfo[] mData = {
-      new ActivityInfo("BottomSheetBehavior",
-              "",
-              null),
+            new ActivityInfo("BottomSheetBehavior",
+                    "CoordinatorLayout与设置了Behavior的直接子类，通过设置peekHeight,状态来展开或是收缩或是隐藏\n\n" +
+                            "BottomSheetDialogFragment原理为显示了BottomSheetDialog",
+                    BottomSheetBehaviorActivity.class),
 
             new ActivityInfo("HeaderBehavior",
                     "",
@@ -51,6 +55,12 @@ public class BehaviorListActivity extends AppCompatActivity {
             new ActivityInfo("ViewOffsetBehavior",
                     "",
                     null),
+            new ActivityInfo("简单应用"),
+
+            new ActivityInfo("BottomSheet展开与TopSheet重合",
+                    "",
+                    BottomSheetApplay1Activity.class),
+
 
     };
 }

@@ -29,7 +29,7 @@ public class RecyclerviewHorizontalActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        mRecyclerView.addItemDecoration(new LinearItemDecoration(this, LinearLayoutManager.HORIZONTAL));
+        mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.HORIZONTAL));
 
         mRecyclerView.setAdapter(new LocalAdapter());
 

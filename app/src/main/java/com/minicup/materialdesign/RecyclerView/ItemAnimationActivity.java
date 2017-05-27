@@ -25,7 +25,7 @@ public class ItemAnimationActivity extends AppCompatActivity {
 
     private StaggeredGridLayoutManager staggeredGridLayoutManagerVertical;
 
-    private StaggeredItemDecoration staggeredItemDecoration;
+    private MarginItemDecoration staggeredItemDecoration;
 
 
     @Override
@@ -43,7 +43,7 @@ public class ItemAnimationActivity extends AppCompatActivity {
 
     private void initLayoutManager() {
 
-        staggeredItemDecoration = new StaggeredItemDecoration(10);
+        staggeredItemDecoration = new MarginItemDecoration(10);
 
         staggeredGridLayoutManagerVertical = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
     }

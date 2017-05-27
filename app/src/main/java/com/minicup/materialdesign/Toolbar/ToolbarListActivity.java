@@ -37,9 +37,9 @@ public class ToolbarListActivity extends AppCompatActivity {
     }
 
     ActivityInfo[] mData = {
-        new ActivityInfo("Toolbar",
-                "Toolbar简单应用",
-                ToolbarActivity.class),
+            new ActivityInfo("Toolbar",
+                    "Toolbar简单应用",
+                    ToolbarActivity.class),
 
             new ActivityInfo("AppBarLayout+Toolbar+RecyclerView",
                     "AppBarLayout所有子View->app:layout_scrollFlags=\"scroll\"",
@@ -60,5 +60,24 @@ public class ToolbarListActivity extends AppCompatActivity {
             new ActivityInfo("AppBarLayout+Toolbar+RecyclerView",
                     "AppBarLayout所有子View->app:layout_scrollFlags=\"scroll|enterAlways|enterAlwaysCollapsed\"",
                     AppBarLayoutActivity4.class),
+
+            new ActivityInfo("AppBarLayout+CollapsingToolbarLayout+Toolbar+RecyclerView",
+                    "沉浸式并添加渐变阴影，使状态栏更明显\n" +
+                            "可扩展收缩的Toolbar，设置Title扩展收缩的字体样式，颜色，外边距\n" +
+                            "layout_scrollFlags=\"snap\"时，不是展开就是收缩，不会停在中间",
+                    CollapsingAppBarLayoutActivity.class),
+            new ActivityInfo("系统ScrollingActivity",
+                    "CollapsingToolbarLayout和ScrollView一起使用会有滑动bug，注意要使用NestedScrollView来替代ScrollView。",
+                    ScrollingActivity.class),
+
+            new ActivityInfo("系统ScrollingActivity",
+                    "加监听,AppBarLayout.addOnOffsetChangedListener()\n" +
+                            "通过滑动的距离设置Title的透明度",
+                    ScrollingActivity2.class),
+
+            new ActivityInfo("AppBarLayout+CollapsingToolbarLayout+Toolbar+TabLayout+ViewPager",
+                    "",
+                    null),
     };
+
 }

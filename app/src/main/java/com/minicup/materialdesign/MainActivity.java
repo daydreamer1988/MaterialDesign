@@ -8,9 +8,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.minicup.materialdesign.Behavior.BehaviorListActivity;
+import com.minicup.materialdesign.BottomSheet.BottomSheetListActivity;
 import com.minicup.materialdesign.FAB.FABActivity;
 import com.minicup.materialdesign.RecyclerView.RecyclerViewListActivity;
 import com.minicup.materialdesign.Snackbar.SnackbarActivity;
+import com.minicup.materialdesign.TabLayout.TabLayoutListActivity;
 import com.minicup.materialdesign.Toolbar.ToolbarListActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,12 +43,26 @@ public class MainActivity extends AppCompatActivity {
                     "",
                     SnackbarActivity.class),
 
+
             new ActivityInfo("Toolbar",
                     "",
                     ToolbarListActivity.class),
+
+            new ActivityInfo("TabLayout",
+                    "",
+                    TabLayoutListActivity.class),
+
+            new ActivityInfo("NavigationView",
+                    "",
+                    null),
+
             new ActivityInfo("RecyclerView",
                     "",
                     RecyclerViewListActivity.class),
+
+            new ActivityInfo("BottomSheet",
+                    "",
+                    BottomSheetListActivity.class),
 
             new ActivityInfo("Behavior",
                     "",

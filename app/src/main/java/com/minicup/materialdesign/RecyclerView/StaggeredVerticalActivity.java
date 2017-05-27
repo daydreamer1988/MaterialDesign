@@ -28,7 +28,7 @@ public class StaggeredVerticalActivity extends AppCompatActivity {
         initData();
 
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
-        mRecyclerView.addItemDecoration(new GridItemDecoration(this, StaggeredGridLayoutManager.VERTICAL));
+        mRecyclerView.addItemDecoration(new GridCustomItemDecoration(this, StaggeredGridLayoutManager.VERTICAL));
 
         mRecyclerView.setAdapter(new LocalAdapter());
     }

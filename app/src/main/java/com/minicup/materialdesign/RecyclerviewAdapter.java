@@ -2,6 +2,7 @@ package com.minicup.materialdesign;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +36,11 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         VH holder1 = (VH) holder;
         holder1.title.setText(mData[position].title);
+        if(mData[position].clz==null){
+            holder1.title.setTextColor(Color.RED);
+        }else{
+            holder1.title.setTextColor(context.getResources().getColor(android.R.color.primary_text_light));
+        }
         holder1.desc.setText(mData[position].desc);
 
     }
