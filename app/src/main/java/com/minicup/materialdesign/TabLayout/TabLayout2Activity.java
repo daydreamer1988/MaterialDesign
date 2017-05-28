@@ -1,5 +1,6 @@
 package com.minicup.materialdesign.TabLayout;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -12,6 +13,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -83,11 +88,21 @@ public class TabLayout2Activity extends AppCompatActivity {
 
         TabLayout.Tab tabAt = mTabLayout.getTabAt(1);
         tabAt.setIcon(R.mipmap.heart);
+
+        TabLayout.Tab tab2 = mTabLayout.getTabAt(2);
+        Drawable image = getResources().getDrawable(R.mipmap.heart);
+        image.setBounds(0, 0, image.getIntrinsicWidth(), image.getIntrinsicHeight());
+        SpannableString sb = new SpannableString(" " + "AA");
+        ImageSpan imageSpan = new ImageSpan(image,ImageSpan.ALIGN_BOTTOM);
+        sb.setSpan(imageSpan, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        TextView textView = new TextView(this);
+        textView.setText(sb);
+        textView.setGravity(Gravity.CENTER);
+        tab2.setCustomView(textView);
     }
 
     private void findById() {
 
-        mTitle = (TextView) findViewById(R.id.title);
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         mCoordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         mAppBarLayout = (AppBarLayout) findViewById(R.id.appBarLayout);

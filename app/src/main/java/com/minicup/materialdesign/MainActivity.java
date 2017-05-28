@@ -10,9 +10,11 @@ import android.widget.ListView;
 import com.minicup.materialdesign.Behavior.BehaviorListActivity;
 import com.minicup.materialdesign.BottomSheet.BottomSheetListActivity;
 import com.minicup.materialdesign.FAB.FABActivity;
+import com.minicup.materialdesign.Navigation.NavigationListActivity;
 import com.minicup.materialdesign.RecyclerView.RecyclerViewListActivity;
 import com.minicup.materialdesign.Snackbar.SnackbarActivity;
 import com.minicup.materialdesign.TabLayout.TabLayoutListActivity;
+import com.minicup.materialdesign.TextInputLayout.LoginActivity;
 import com.minicup.materialdesign.Toolbar.ToolbarListActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
             new ActivityInfo("FAB",
                     "",
                     FABActivity.class),
+
+            new ActivityInfo("TextInputLayout",
+                    "",
+                    LoginActivity.class),
             new ActivityInfo("Snackbar",
                     "",
                     SnackbarActivity.class),
@@ -54,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             new ActivityInfo("NavigationView",
                     "",
-                    null),
+                    NavigationListActivity.class),
 
             new ActivityInfo("RecyclerView",
                     "",
