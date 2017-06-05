@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -63,6 +64,31 @@
 
             </android.support.design.widget.TextInputLayout>
 
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="counterEnabled:是否显示计数\ncounterMaxLength:最大字符数\ncounterTextAppearance:不到最大限度时的TextApperance(包括hint及字符计数)\ncounterOverflowTextAppearance:字符超过限制时的TextApperance"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterTextAppearance="@style/CounterTextAppearance"
+                app:counterOverflowTextAppearance="@style/MyOverflowText"
+                app:counterMaxLength="10" >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hint text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
             <Button
                 android:id="@+id/email_sign_in_button"
                 style="?android:textAppearanceSmall"
@@ -71,6 +97,14 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="design 24，时密码的TextInputLayout右边有显示密码的眼睛，但是密码输入错误时，提示与眼睛重叠\ndesign 25, 貌似改进了这个问题"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>
