@@ -19,6 +19,7 @@ import com.minicup.materialdesign.Snackbar.SnackbarActivity;
 import com.minicup.materialdesign.TabLayout.TabLayoutListActivity;
 import com.minicup.materialdesign.TextInputLayout.LoginActivity;
 import com.minicup.materialdesign.Toolbar.ToolbarListActivity;
+import com.minicup.materialdesign.Transition.TransitionListActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ListView mListView;
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
             new ActivityInfo("Z, 动画",
                     "",
                     MaterialDesignListActivity.class),
+
+            new ActivityInfo("Transition",
+                    "",
+                    TransitionListActivity.class),
 
             new ActivityInfo("NotificationCompat",
                     "",

@@ -1,27 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_height="match_parent">
 
-    <TextView
-        android:background="@drawable/reveal_view_ripple"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingBottom="100dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:onClick="selectButton"
+                android:id="@+id/view1"
+                android:background="@drawable/reveal_view_ripple"
+                android:stateListAnimator="@animator/view_elevation"
+                android:layout_width="150dp"
+                android:clickable="true"
+                android:text="View1"
+                android:gravity="center"
+                android:layout_height="150dp" />
 
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:background="@drawable/reveal_view_ripple"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+            <TextView
+                android:onClick="selectButton"
+                android:text="View2"
+                android:gravity="center"
+                android:id="@+id/view2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/reveal_view_ripple"
+                android:layout_width="150dp"
+                android:stateListAnimator="@animator/view_elevation"
+                android:clickable="true"
+
+                android:layout_height="150dp" />
 
 
-    <TextView
-        android:layout_marginTop="10dp"
-        android:background="@drawable/reveal_view_ripple"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+            <TextView
+                android:onClick="selectButton"
+                android:text="View3"
+                android:gravity="center"
+                android:id="@+id/view3"
+                android:layout_marginTop="10dp"
+                android:stateListAnimator="@animator/view_elevation"
+                android:clickable="true"
+
+                android:background="@drawable/reveal_view_ripple"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:text="View4"
+                android:gravity="center"
+                android:id="@+id/view4"
+                android:layout_marginTop="10dp"
+                android:stateListAnimator="@animator/view_elevation"
+                android:clickable="true"
+                android:background="@drawable/reveal_view_selector"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>
