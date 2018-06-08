@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 
 import com.minicup.materialdesign.ActivityInfo;
 import com.minicup.materialdesign.R;
-import com.minicup.materialdesign.RecyclerView.LinearCustomItemDecoration;
 import com.minicup.materialdesign.RecyclerviewAdapter;
 
 public class TabLayoutListActivity extends AppCompatActivity {
@@ -21,7 +20,7 @@ public class TabLayoutListActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.VERTICAL));
+        //mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.VERTICAL));
 
         mRecyclerView.setAdapter(new RecyclerviewAdapter(this, getData()));
 
@@ -42,6 +41,10 @@ public class TabLayoutListActivity extends AppCompatActivity {
                         TabLayout2Activity.class),
 
 
+                new ActivityInfo("TabLayout+ViewPager",
+                        "结合CoordinatorLayout，AppBarLayout,实现enterAlways效果的TabLayout\n" +
+                                "并自定义Tab的样式",
+                        TabLayout3Activity.class),
 
         };
         return mData;

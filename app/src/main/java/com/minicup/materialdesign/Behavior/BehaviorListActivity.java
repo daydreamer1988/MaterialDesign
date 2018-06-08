@@ -10,7 +10,6 @@ import android.widget.Toast;
 import com.minicup.materialdesign.ActivityInfo;
 import com.minicup.materialdesign.BottomSheet.BottomSheetBehaviorActivity;
 import com.minicup.materialdesign.R;
-import com.minicup.materialdesign.RecyclerView.MarginItemDecoration;
 import com.minicup.materialdesign.RecyclerviewAdapter;
 
 public class BehaviorListActivity extends AppCompatActivity {
@@ -34,7 +33,7 @@ public class BehaviorListActivity extends AppCompatActivity {
             }
         });
 
-        mRecyclerView.addItemDecoration(new MarginItemDecoration(1));
+        //mRecyclerView.addItemDecoration(new MarginItemDecoration(1));
     }
 
     ActivityInfo[] mData = {

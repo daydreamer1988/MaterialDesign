@@ -8,14 +8,18 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.minicup.materialdesign.Behavior.BehaviorListActivity;
+import com.minicup.materialdesign.BottomNavigationView.BottomNavigationViewActivity;
 import com.minicup.materialdesign.BottomSheet.BottomSheetListActivity;
 import com.minicup.materialdesign.FAB.FABActivity;
+import com.minicup.materialdesign.MaterialDesign.MaterialDesignListActivity;
 import com.minicup.materialdesign.Navigation.NavigationListActivity;
+import com.minicup.materialdesign.NotificationCompat.NotificationCompatListActivity;
 import com.minicup.materialdesign.RecyclerView.RecyclerViewListActivity;
 import com.minicup.materialdesign.Snackbar.SnackbarActivity;
 import com.minicup.materialdesign.TabLayout.TabLayoutListActivity;
 import com.minicup.materialdesign.TextInputLayout.LoginActivity;
 import com.minicup.materialdesign.Toolbar.ToolbarListActivity;
+import com.minicup.materialdesign.Transition.TransitionListActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ListView mListView;
@@ -38,6 +42,18 @@ public class MainActivity extends AppCompatActivity {
 
     public ActivityInfo[] mDatas = {
 
+            new ActivityInfo("Z, 动画",
+                    "",
+                    MaterialDesignListActivity.class),
+
+            new ActivityInfo("Transition",
+                    "",
+                    TransitionListActivity.class),
+
+            new ActivityInfo("NotificationCompat",
+                    "",
+                    NotificationCompatListActivity.class),
+
             new ActivityInfo("FAB",
                     "",
                     FABActivity.class),
@@ -49,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     "",
                     SnackbarActivity.class),
 
+            new ActivityInfo("BottomNavigationView(design25)",
+                    "",
+                    BottomNavigationViewActivity.class),
 
             new ActivityInfo("Toolbar",
                     "",

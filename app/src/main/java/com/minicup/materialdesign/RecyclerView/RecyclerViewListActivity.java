@@ -19,7 +19,7 @@ public class RecyclerViewListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler_view_list);
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.VERTICAL));
+        //mRecyclerView.addItemDecoration(new LinearCustomItemDecoration(this, LinearLayoutManager.VERTICAL));
         RecyclerviewAdapter adapter = new RecyclerviewAdapter(this, getData());
         mRecyclerView.setAdapter(adapter);
 

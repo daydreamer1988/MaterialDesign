@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/scene1"
+                android:onClick="changeScene"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene1"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="changeScene"
+                android:id="@+id/scene2"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene2"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="changeScene"
+                android:id="@+id/scene3"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene3"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="changeScene"
+                android:id="@+id/scene4"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene4"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="changeScene"
+                android:id="@+id/scene5"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene5"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="changeScene"
+                android:id="@+id/scene6"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="scene6"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/scene1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

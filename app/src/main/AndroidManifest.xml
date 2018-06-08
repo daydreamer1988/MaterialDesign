@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.minicup.materialdesign">
+
+    <uses-sdk tools:overrideLibrary="com.luseen.luseenbottomnavigation" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -8,6 +11,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -100,7 +104,34 @@
         <activity
             android:name=".TextInputLayout.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".Reveal.RevealActivity"></activity>
+        <activity android:name=".MaterialDesign.RevealActivity" />
+        <activity android:name=".TabLayout.TabLayout3Activity" />
+        <activity android:name=".BottomNavigationView.BottomNavigationViewActivity" />
+        <activity android:name=".BottomNavigationView.BasicBottomNavigationViewActivity" />
+        <activity android:name=".BottomNavigationView.BottomNavigationViewPagerActivity" />
+        <activity android:name=".BottomNavigationView.BottomNavigationViewPagerActivity2" />
+        <activity android:name=".BottomNavigationView.LuseenBottomNavigationActivity" />
+        <activity android:name=".NotificationCompat.NotificationCompatListActivity" />
+        <activity android:name=".NotificationCompat.BitTextStyleActivity" />
+        <activity android:name=".NotificationCompat.BigPictureStyleActivity" />
+        <activity android:name=".NotificationCompat.InboxStyleActivity" />
+        <activity android:name=".MaterialDesign.MaterialDesignListActivity" />
+        <activity android:name=".MaterialDesign.ZActivity" />
+        <activity android:name=".MaterialDesign.ShadowAndOutlineActivity" />
+        <activity android:name=".MaterialDesign.ViewDragHelperActivity" />
+        <activity android:name=".MaterialDesign.TintActivity" />
+        <activity android:name=".MaterialDesign.RippleActivity" />
+        <activity android:name=".MaterialDesign.CircularRevealActivity" />
+        <activity android:name=".Transition.TransitionListActivity" />
+        <activity android:name=".Transition.SimpleTransitionActivity" />
+        <activity android:name=".Transition.TransitionActivity" />
+        <activity
+            android:name=".Transition.ShareElementsActivity"
+            android:theme="@style/TransitionExplode" />
+        <activity android:name=".Transition.TransitionDescActivity" />
+        <activity android:name=".Transition.SimpleTransition2Activity" />
+        <activity android:name=".Transition.TransitionDrawableActivity" />
+        <activity android:name=".Transition.CustomTransitionActivity"></activity>
     </application>
 
 </manifest>

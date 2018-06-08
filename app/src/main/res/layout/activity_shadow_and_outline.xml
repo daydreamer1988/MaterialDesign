@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Shadow条件：\n1:设置background或outline\n2:设置elevation"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:background="@drawable/corner_primary_bg"
+        android:elevation="5dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="通过布局中设置background及elevation,显示阴影"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/secondTv"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="通过代码中设置ViewOutlineProvider,显示阴影"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+</RelativeLayout>
